@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Uploads</title>
+</head>
+<body>
+    <h1>My Uploads</h1>
+    
+    <!-- Upload File Form -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Select a file to upload:</label>
+        <input type="file" name="file" id="file">
+        <button type="submit">Upload</button>
+    </form>
+    
+    <!-- Create Folder Form -->
+    <form action="/create-folder" method="post">
+        <label for="folderName">Enter folder name:</label>
+        <input type="text" name="folderName" id="folderName">
+        <button type="submit">Create Folder</button>
+    </form>
+</body>
+</html>
