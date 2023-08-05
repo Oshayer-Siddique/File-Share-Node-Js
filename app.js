@@ -7,7 +7,7 @@ const multer = require('multer');
 const path = require('path');
 const app = express();
 const secret_key = "Oshayer";
-const port = 5000;
+const port = 8080;
 
 app.use(express.json());
 
@@ -25,7 +25,7 @@ app.set("view engine", "ejs");
 
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/File_Sharing", {
+  .connect("mongodb+srv://oshayersiddique2001:fileshare12345678@cluster0.p9wqyh7.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
